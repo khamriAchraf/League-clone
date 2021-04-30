@@ -221,14 +221,64 @@ h1 {
     transform: translateX(-65%);
     top: 0;
     height: 50px;
+    
+
 }
 
 .carousel-indicators li {
     width: 100%;
-    height: 50px;
+    height: 70px;
+    text-indent: 0;
+    text-align: center;
+    margin: auto;
+    background-color: transparent;
+    border-top: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom,#2d2c28,transparent) 1 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+    transition: color 0.5s;
 }
 
-.carousel-indicators .active {}
+.carousel-indicators .active {
+    background-image: url('ressources/champions_highlight.png') ;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    opacity: 1;
+    color: white;
+}
+
+#previous {
+    position: absolute;
+    bottom: 80px;
+    height: 79px;
+    width: 57px;
+    background: url('ressources/arrows_sprite.png') 0 0;
+
+}
+
+#next {
+    position: absolute;
+    bottom: 80px;
+    height: 79px;
+    width: 57px;
+    background: url('ressources/arrows_sprite.png') -57px 0;
+    
+}
+
+.carousel-control-prev:hover {
+    background: linear-gradient(to left,transparent,rgba(0,0,0,0.8));
+}
+.carousel-control-next:hover {
+    background: linear-gradient(to right,transparent,rgba(0,0,0,0.8));
+}
+
+
 
 
 /************************************* END Carousel *******************************************/
@@ -418,4 +468,26 @@ h1 {
     flex-shrink: 0;
     margin: 5px 0;
     max-width: 100%;
+}
+
+.btn-cookies {
+    position: fixed;
+    z-index: 8055;
+    bottom: 10px;
+    left: 0;
+    color: #D2CDBC;
+    background: #1c2229;
+    border: 1px solid #785A28;
+    border-radius: 0;
+    border-left: 0;
+    padding: 5px;
+    cursor: pointer;
+    font-style: serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    
+}
+
+.btn-cookies:hover {
+    color: #D2CDBC;;
 }
