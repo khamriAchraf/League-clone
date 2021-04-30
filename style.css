@@ -1,0 +1,421 @@
+body {
+    font-family: "BeaufortforLOL-Bold";
+    font-weight: 400;
+    overflow-x: hidden;
+    color: #948f81;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 20%);
+    background-color: black;
+
+}
+
+strong {
+    color: white;
+}
+
+h2 {
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Nav Link */
+
+.navbar {
+    padding: 10px 30px;
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+}
+
+
+/****************************************  Hero ***********************************************/
+
+
+.hero-bg {
+    height: 97vh;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+}
+
+#videoBG {
+    transform: scale(1.3);
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    text-align: center;
+    height: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero .tagline {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+}
+
+
+h1 {
+    font-size: 65px;
+    color: #c8aa6e;
+}
+
+.playButton {
+    margin-top: 10px;
+    background-color: #1e2328;
+    color: #f0e6d2;
+    padding: 13px 35px 12px;
+    border: 3px solid rgba(192, 252, 253, .7);
+    border-radius: 0;
+    font-size: 18px;
+    font-family: "Beaufort for LOL";
+    font-weight: 400;
+    box-shadow: 0 0 0 0 transparent;
+    border-image: linear-gradient(to bottom, #08abac 0, #01698b 100%);
+    border-image-slice: 1;
+    transition: all ease 1s;
+}
+
+.playButton:hover {
+    background-image: url('ressources/btn.jpg');
+    background-size: cover;
+    color: #f0e6d2;
+    border: 3px solid rgba(192, 252, 253, .7);
+}
+
+/************************************* End Hero *********************************************/
+
+
+
+
+/**************************************** Rift ***********************************************/
+
+.rift {
+    background-image: url('ressources/bg_rift.jpg');
+    background-size: cover;
+    padding: 6%;
+    z-index: -1;
+    box-shadow: 0 4px 15px -2px #000 inset;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-image: linear-gradient(to right, #836323 0, #c3a568 51%, #836323 100%);
+    border-image-slice: 1;
+}
+
+.rift h2 {
+    font-size: 40px;
+}
+
+.rift p {
+    font-size: 18px;
+}
+
+/******************* Modal **********************/
+
+.modal-header {
+    background: url('ressources/lightbox_frame.png');
+    background-repeat: no-repeat;
+}
+
+
+.modal-content {
+    background: black;
+    width: 900px;
+    height: auto;
+    border: 4px solid #463714;
+}
+
+.close {
+    position: absolute;
+    right: -13px;
+    top: -7px;
+    z-index: 100;
+}
+
+.modal-accent {
+    background: url(ressources/lightbox_frame.png) no-repeat;
+    width: 85px;
+    height: 90%;
+    position: absolute;
+    right: -24px;
+    z-index: 10;
+}
+
+.videoToggle {
+    text-decoration: underline;
+    color: #09abae;
+}
+
+.videoToggle:hover {
+    cursor: pointer;
+    color: #09abae;
+}
+
+
+.thumbnail::after {
+    background: url('ressources/thumb_video_play.png') scroll 0 0;
+    content: " ";
+    display: block;
+    height: 40px;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    z-index: 100;
+}
+
+.thumbnail {
+    border: 2px solid #836323;
+}
+
+.thumbnail:hover {
+    border: 2px solid #09abae;
+}
+
+.thumbnail-hover {
+    border: 2px solid #09abae;
+}
+
+
+/************************************* END Rift *******************************************/
+
+
+/************************************* Carousel *******************************************/
+
+.carousel h5 {
+    color: #f0e6d2;
+    font-size: 40px;
+}
+
+.carousel p {
+    color: #948f81;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.carousel-indicators {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-65%);
+    top: 0;
+    height: 50px;
+}
+
+.carousel-indicators li {
+    width: 100%;
+    height: 50px;
+}
+
+.carousel-indicators .active {}
+
+
+/************************************* END Carousel *******************************************/
+
+
+/***************************************** Gameplay *******************************************/
+
+
+.gameplay {
+    border-top: 8px solid transparent;
+    border-image: linear-gradient(to right, #836323 0, #c3a568 51%, #836323 100%);
+    border-image-slice: 1;
+}
+
+.gameplay-one {
+    text-align: center;
+    background-image: url('ressources/gameplay_1.jpg');
+    background-size: cover;
+    background-position: center center;
+    border-right: 2px solid #c3a568;
+    min-height: 670px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+}
+
+.gameplay-two {
+    text-align: center;
+    background-image: url('ressources/gameplay_2.jpg');
+    background-size: cover;
+    background-position: center center;
+    border-left: 2px solid #c3a568;
+    min-height: 670px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+}
+
+.bordered {
+    border: 3px solid rgba(195, 165, 104, .3);
+    bottom: 35px;
+    left: 35px;
+    padding: 35px;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+}
+
+.tag {
+    margin-top: 70%;
+    padding: 40px 100px 80px;
+    text-align: center;
+    min-height: 200px;
+    bottom: 500px;
+    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .5) 100%);
+}
+
+.tag h2 {
+    color: #f0e6d2;
+    font-size: 40px;
+}
+
+
+/************************************** END Gameplay *******************************************/
+
+
+/***************************************** CTA *******************************************/
+
+.cta {
+    background: url('ressources/image\ \(2\).jfif') no-repeat;
+    background-size: cover;
+    height: 95vh;
+    border-top: 8px solid transparent;
+    border-image: linear-gradient(to right, #836323 0, #c3a568 51%, #836323 100%);
+    border-image-slice: 1;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: 0 4px 15px -2px #000 inset;
+}
+
+
+.cta-tagline {
+    text-align: center;
+    margin: auto;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0.5802696078431373) 85%, rgba(0, 0, 0, 0.07886904761904767) 100%);
+    min-height: 150px;
+    position: relative;
+    bottom: 150px;
+}
+
+
+
+
+
+/********************************* Footer *********************************************/
+
+.footer {
+    margin-top: -100px;
+    text-align: center;
+    background-color: #111;
+    padding: 50px;
+    border-top: 2px solid rgba(51, 51, 51, 0.25);
+}
+
+.footer img {
+    width: 100px;
+    filter: brightness(100);
+}
+
+.footer p {
+    margin: 40px auto;
+    font-size: 11px;
+    line-height: 1.316;
+    max-width: 500px;
+    text-align: center;
+    color: #7E7E7E;
+    transition: color 0.2s linear;
+    word-break: keep-all;
+}
+
+.footer .legal {
+    margin: 40px auto;
+    font-weight: 500;
+    font-size: 11px;
+    color: #7E7E7E;
+}
+
+.footer .legal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .legal a {
+    font-weight: 500;
+    font-size: 11px;
+    color: #7E7E7E;
+    margin: 5px;
+    text-decoration: underline;
+}
+
+.riotbar-game-ratings {
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.riotbar-game-ratings .riotbar-game-rating {
+    margin: 0 10px;
+    max-width: 100%;
+}
+
+.riotbar-game-ratings .pegi .riotbar-game-rating-logo {
+    background-image: url(https://cdn.leagueoflegends.com/riotbar/prod/2.0.144/images/footer/game-rating-logos/pegi.png);
+    width: 56px;
+    height: 68px;
+}
+
+.riotbar-game-ratings .riotbar-game-rating-logo {
+    display: block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+    margin: 5px 0;
+    max-width: 100%;
+}
+
+.riotbar-game-ratings .usk-12 .riotbar-game-rating-logo {
+    background-image: url(https://cdn.leagueoflegends.com/riotbar/prod/2.0.144/images/footer/game-rating-logos/usk-12.png);
+    width: 68px;
+    height: 68px;
+}
+.riotbar-game-ratings .riotbar-game-rating-logo {
+    display: block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+    margin: 5px 0;
+    max-width: 100%;
+}
